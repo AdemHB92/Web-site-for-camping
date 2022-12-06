@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+      html {
+overflow: scroll;
+overflow-x: hidden;
+}
+::-webkit-scrollbar {
+width: 0px; }
+
+::-webkit-scrollbar-thumb {
+background: #FF0000;
+}
+
+
+
+
+nav{
+   margin-top: -461px;
+
+   margin-left: 150px;
+   position: fixed;
+ background:rgba(2, 51, 51, 2);
+ opacity: 85%;
+ border-radius: 30px;
+}
+nav:hover{
+   transform: translateY(100px);
+}
+
+.navd li{
+  
+   display: inline-block;
+   margin-top: 35px;
+   font-weight: 500;
+   font-size: 26px;
+   color: #fff;
+   padding: 0px 70px;
+
+}
+.navd li a{ 
+   display: flex;
+   text-decoration: none;
+   color: #fff;
+   position: relative;
+}
+.navd li a::after{
+   content: '';
+   width: 0;
+   height: 3px;
+   position: absolute;
+   bottom: -5px;
+   left: 50%;
+   transform: translateX(-50%);
+   transition: width 0.3s;
+   background: #ffc21c;
+
+}
+.navd li a:hover::after{
+
+   width: 100%;
+   
+}
+
+
+
+
+
+/*_________Sahara_________*/
+.all{
+
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 2),transparent),url(pics/sahara.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 8%;
+   position: relative;
+}
+#desert{
+   text-align: center;
+   font-family: 'Trade Winds';
+   margin-top: 390px;
+      
+   padding-bottom: 60px;
+   color: #ffff;
+   position: absolute;
+}
+#desert h1{
+
+   font-size: 60px;
+   line-height: 160 px;
+   margin-left: -25px;
+   color: transparent;
+   -webkit-text-stroke: 1px #fff;
+   -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right,#99cc33,#ffe513,#0099cc);
+   -webkit-background-clip: text;
+   background-position: 0 50px ;
+   
+}
+
+
+
+
+
+/*_________Bizerte_________*/
+    .allB{
+   
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 2),transparent),url(pics/bizerte.png);
+   background-size: cover;
+   background-position: center;
+   padding:  8%;
+   position: relative;
+    }
+    #bizert{
+   text-align: center;
+   font-family: 'Wendy One';
+   margin-top: 490px;
+   margin-left: -150px;
+      
+   padding-bottom: 60px;
+   color: #ffff;
+   position: absolute;
+}
+#bizert p{
+   font-size: 24px;
+}
+#bizert h1{
+   font-size: 46px;
+
+   margin-left: -25px;
+   color: transparent;
+   -webkit-text-stroke: 1px #fff;
+   -webkit-text-fill-color: transparent;
+
+   -webkit-background-clip: text;
+   background-position: 0 50px ;
+   
+}
+    /*_______Nabeul________*/
+    .allN{
+           width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 2),transparent),url(pics/nabeul.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 8%;
+   position: relative;
+    }
+
+
+   
+   
+
+
+
+    #nabeul{
+      
+   text-align: center;
+   font-family: 'Wendy One';
+   margin-top: 490px;
+   padding-bottom: 60px;
+   color: #ffff;
+   position: absolute;
+}
+
+#nabeul p{
+   font-size: 24px;
+}
+
+#nabeul h1{
+   font-size: 46px;
+
+   margin-left: -25px;
+   color: transparent;
+   -webkit-text-stroke: 1px #fff;
+   -webkit-text-fill-color: transparent;
+
+   -webkit-background-clip: text;
+   background-position: 0 50px ;
+}
+.destinations{
+   position: relative;
+   width: 750px;
+   height: 650px;
+   display: block;
+   overflow: hidden;
+   border-radius: 10px;
+   box-sizing: border-box;
+   cursor: pointer;
+   position: absolute;
+    top: 400px;
+    left: 900px
+
+   
+}
+
+
+
+.content{
+   color: wheat;
+   font-size: 25px;
+   text-align: center;
+   padding: 150px 0px;
+   width: 100%;
+   height: 100%;
+}
+a {
+   text-decoration: none;
+}
+
+
+
+/*_____________DESERET CARD________________*/
+#d1 {
+   opacity: 90%;
+   width: 340px;
+   height: 290px;
+   border-radius: 10px;
+   background-image: linear-gradient(transparent,rgba(0, 0, 0, 2)),url(pics/tzr1.png);
+   background-size: 100% 100%;
+   background-position: absolute;
+   box-shadow: 0 5px 10px black;
+   margin: 0% auto;
+   position: relative;
+   overflow: hidden;
+}
+#d1 span{
+   height: 100%;
+   left: 0;
+   background: url(pics/tzr2.png);
+   background-size: 100% 100%;
+   position: absolute;
+   width: 100%;
+}
+
+#d1:hover span{
+transform: translateY(-100%);
+
+transition: 0.5s;
+}
+#d2 {
+   opacity: 90%;
+   width: 340px;
+   height: 290px;
+   border-radius: 10px;
+   background-image: linear-gradient(transparent,rgba(0, 0, 0, 2)),url(pics/121.png);
+   background-size: 100% 100%;
+   background-position: absolute;
+   box-shadow: 0 5px 10px black;
+   margin: 0% auto;
+   position: relative;
+   overflow: hidden;
+}
+#d2 span{
+   height: 100%;
+   left: 0;
+   background: url(pics/122.png);
+   background-size: 100% 100%;
+   position: absolute;
+   width: 100%;
+}
+
+#d2:hover span{
+transform: translateY(-100%);
+
+transition: 0.5s;
+}
+
+
+
+
+/*_____________NABEUL CARD________________*/
+#n1 {
+   opacity: 90%;
+   width: 340px;
+   height: 290px;
+   border-radius: 10px;
+   background-image: linear-gradient(transparent,rgba(0, 0, 0, 2)),url(pics/hao1.png);
+   background-size: 100% 100%;
+   background-position: absolute;
+   box-shadow: 0 5px 10px black;
+   margin: 0% auto;
+   position: relative;
+   overflow: hidden;
+}
+#n1 span{
+   height: 100%;
+   left: 0;
+   background: url(pics/hao2.png);
+   background-size: 100% 100%;
+   position: absolute;
+   width: 100%;
+}
+
+#n1:hover span{
+transform: translateY(-100%);
+
+transition: 0.5s;
+}
+#n2 {
+   opacity: 90%;
+   width: 340px;
+   height: 290px;
+   border-radius: 10px;
+   background-image: linear-gradient(transparent,rgba(0, 0, 0, 2)),url(pics/ker1.png);
+   background-size: 100% 100%;
+   background-position: absolute;
+   box-shadow: 0 5px 10px black;
+   margin: 0% auto;
+   position: relative;
+   overflow: hidden;
+}
+#n2 span{
+   height: 100%;
+   left: 0;
+   background: url(pics/ker2.png);
+   background-size: 100% 100%;
+   position: absolute;
+   width: 100%;
+}
+
+#n2:hover span{
+transform: translateY(-100%);
+
+transition: 0.5s;
+}
+
+
+
+/*_____________BIZERT CARD________________*/
+
+#b1 {
+   opacity: 90%;
+   width: 340px;
+   height: 290px;
+   border-radius: 10px;
+   background-image: linear-gradient(transparent,rgba(0, 0, 0, 2)),url(pics/serrat2.png);
+   background-size: 100% 100%;
+   background-position: absolute;
+   box-shadow: 0 5px 10px black;
+   margin: 0% auto;
+   position: relative;
+   overflow: hidden;
+}
+#b1 span{
+   height: 100%;
+   left: 0;
+   background: url(pics/serrat1.png);
+   background-size: 100% 100%;
+   position: absolute;
+   width: 100%;
+}
+
+#b1:hover span{
+transform: translateY(-100%);
+transition: 0.5s;
+}
+
+
+#b2 {
+   opacity: 90%;
+   width: 340px;
+   height: 290px;
+   border-radius: 10px;
+   background-image: linear-gradient(transparent,rgba(0, 0, 0, 2)),url(pics/angela2.png);
+   background-size: 100% 100%;
+   background-position: absolute;
+   box-shadow: 0 5px 10px black;
+   margin: 0% auto;
+   position: relative;
+   overflow: hidden;
+}
+#b2 span{
+   height: 100%;
+   left: 0;
+   background: url(pics/angela1.png);
+   background-size: 100% 100%;
+   position: absolute;
+   width: 100%;
+}
+
+#b2:hover span{
+transform: translateY(-100%);
+
+transition: 0.5s;
+}
+
+
+
+
+
+
+/*______________Style des pages ___________________*/
+/*___________________ Tozeur _____________________*/
+.allTz{
+    background-attachment: fixed;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 2),transparent),url(pics/Tozeur.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 8%;
+   background-repeat: no-repeat;
+   position: relative;
+}
+/*___________________ Douz _____________________*/
+
+.allDz{
+    background-attachment: fixed;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 2),transparent),url(pics/douz.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 8%;
+   background-repeat: no-repeat;
+   position: relative;
+}
+/*___________________ kerkouane _____________________*/
+
+.allkr{
+    background-attachment: fixed;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 2),transparent),url(pics/kerkouane.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 8%;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+
+
+/*___________________ haouaria _____________________*/
+
+.allhr{
+    background-attachment: fixed;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 2),transparent),url(pics/haouaria.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 8%;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+/*___________________ Angela _____________________*/
+
+.allAg{
+   background-attachment: fixed;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 2),transparent),url(pics/angelabg.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 8%;
+   background-repeat: no-repeat;
+   position: relative;
+}
+/*___________________ Serrat _____________________*/
+
+.allSr{
+    background-attachment: fixed;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 2),transparent),url(pics/Serratbg.png);
+   background-size: cover;
+   background-position: center;
+   padding: 0 8%;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+
+
+
+
+
+table{
+        margin-top: 80px;
+}
+
+
+
+
+
+.map{
+   
+
+   padding-left: 125px;
+   position: static;
+   height:500px;
+   width:600px;
+   overflow:hidden;
+
+}
+
+.cont{
+   margin-top: 350px;
+   margin-left: 350px;
+}
+
+.Presentation{
+
+text-align: center;
+ width: 850px;
+        
+        font-family: Secular One;
+        font-size: 35px;
+        color: white;
+        text-shadow: 2px 2px 2px  black;
+        padding-bottom: 150px;
+}
+
+
+
+.activities{
+text-align: center;
+ width: 850px;
+        
+        font-family: Secular One;
+        font-size: 35px;
+        color: white;
+        text-shadow: 2px 2px 2px  black;
+}
+
+
+
+
+#slider {
+
+   margin-left: 50px;
+   overflow: hidden;
+   height: 500px;
+   width: 750px;
+   box-shadow: 1px 2px 10px 5px black;,
+}
+#slider figure {
+
+   margin-left: -0.8px;
+   size: 100% 100%;
+   position: relative;
+   width: 500%;
+   animation: 12s slider infinite;
+}
+#slider figure img {
+   top: -10px;
+   opacity:90%;
+   width: 20%;
+   float: left;
+   position: relative;
+}
+
+@keyframes slider {
+   0% {
+      left: 0;
+   }
+   20% {
+      left: 0;
+   }
+   25% {
+      left: -100%;
+   }
+   45% {
+      left: -100%;
+   }
+   50% {
+      left: -200%;
+   }
+   70% {
+      left: -200%;
+   }
+   75% {
+      left: -300%;
+   }
+   95% {
+      left: -300%;
+   }
+   100% {
+      left: -400%;
+   }
+   120%{
+      left: -400%;
+   }
+   125%{
+      left: -500%;
+   }
+}
+
+
+
+
+.feedback{
+   display: flex;
+  padding: 50px;
+  font-family: "montserrat",sans-serif;
+}
+.tab{
+
+   padding-left: 250px;
+}
+.tab td{
+   padding-left: 50px;
+}
+.tab td:hover {
+transform: translateY(-20%);
+
+transition: 0.6s;
+}
+
+.avis{
+  padding: 15px;
+  background: white;
+  border-radius: 20px;
+  opacity: 95%;
+
+}
+.note{
+   margin-top: -105px;
+  padding-left:-40px;
+  width: 250px;
+}
+.star{
+   margin-top: -20px;
+  margin-left: 85px;
+  width: 50px;
+  height: 50px;
+}
+.user{
+  margin-top: 20px;
+  width: 80px;
+  height: 80px;
+  clip-path: circle();
+}
+.uname{
+  font-size: 30px;
+
+
+  margin-left: 85px;
+}
+p{
+   font-size: 15px;
+
+  text-align: center;
+
+}
+.note h2{
+  color: gray;
+  font-size: 15px;
+  margin-top: -40px;
+  padding-left: 140px;
+}
+.road {
+   display: flex;
+   width: 900px;
+   text-align: center;
+   margin-left: 300px;
+   font-size: 30px;
+   font-family: Secular One;
+   color: white;
+}
+
+

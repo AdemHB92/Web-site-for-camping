@@ -1,0 +1,89 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>reservation</title>
+    <link rel="stylesheet" href="css/contact.css">
+  </head>
+  <script>
+      function tet() {
+  nom=document.getElementById("nom").value;
+  email=document.getElementById("mail").value;
+  tel=document.getElementById("tel").value;
+  for (i=0;i< length(nom) ;i++){
+    if(  nom.charAt(nom[i])<'a' || nom.charAt(nom[i])>'z' || nom.charAt(nom[i])<'A' || nom.charAt(nom[i])>'Z')
+    {alert("verifier votre nom ");return false;}}
+
+  if (isNaN(tel) || tel.length!=8  )
+  {alert("saisir votre telephone");return false;}
+    at=email.indexOf('@')
+    point=email.indexOf('.',at)
+    if(email=="" || at==-1 || point==-1){
+    alert("verifier votre email");
+        return false;
+    }
+  
+        }
+  </script>
+    
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="home.html"><img class="logo" src="pics/TUNISIAN TRIPS-logo-white.png " alt="" /></a>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="home.html">accueil</a></li>
+            <li><a href="voyage.html">voyages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cntct">
+      <div class="contact">
+        <form action="res.php" method="POST">
+          <h2>Reservation</h2>
+          <div class="inputbox">
+            <input required="required" type="text" name="T1" size="20" id="nom">
+            <span>Full Name</span>
+          </div>
+          <br>
+          <div class="inputbox">
+            <input required="required" type="text" name="T2" size="20" id="mail">
+            <span>E-mail</span>
+          </div>
+          <br>
+          <div class="inputbox">
+            <input required="required" type="text" name="T3" size="20" id="tel">
+            <span>Phone number</span>
+          </div>
+          <br>
+          <div class="">
+            <span>Jour de depart</span><br>
+            <input required="required" type="date"    name="T4" size="20"  required >
+            
+          </div>
+          <br>
+          <div class="classnames">
+            <span>Destination</span>
+            <select id="dest" name="T5">
+                <option >--Please choose a destination--</option>
+                <option value="bzerte">bizerte</option>
+                <option value="douga">douga</option>
+                <option value="ain drahem">ain drhaem</option>
+                <option value="sud tunisien">sud tunisien</option>
+            </select>
+            
+          </div>
+          <button onclick="tet()" type="submit">Confirm la reservation</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
